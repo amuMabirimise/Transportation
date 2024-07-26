@@ -141,6 +141,7 @@ header .icons #menu-bars {
         position: absolute;
         top: 60px;
         left: 0;
+        color: #F8F8FF;
         background: var(--ghost-white);
         text-align: center;
         box-shadow: var(--box-shadow);

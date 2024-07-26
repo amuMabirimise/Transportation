@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --green: #27ae60;
+    --black: #192a56;
+    --box-shadow: 0.5rem 1.5rem rgba(0,0,0, .1);
+    --ghost-white: #F8F8FF;
+}
+
+
+/*media queries*/
+@media (max-width: 991px){
+    * {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+    }
+    
+    html{
+        font-size: 55%;
+    }
+
+    section{
+        padding: 2rem 9%;
+    }
+    
+    section :nth-child(even){
+        background: var(--ghost-white);
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--ghost-white);
+        border-bottom: .1rem;
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+    #search-form #search-box{
+       width: 80%;
+       margin: 0 1rem;
+    }
+}
+
+
+
+
+
+

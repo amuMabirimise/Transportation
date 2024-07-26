@@ -580,7 +580,7 @@ header .icons #menu-bars{
         left: 0;
         right: 0;
         background: var(--ghost-white);
-        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.8);
+        border-bottom: 0.1rem solid #ffffff;
         padding: 1rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }

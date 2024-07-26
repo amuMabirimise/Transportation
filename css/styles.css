@@ -145,11 +145,12 @@ header .icons #menu-bars {
         left: 0;
         right: 0;
         background: var(--ghost-white); /* Background color consistency */
-        border-bottom: .1rem solid rgba(0,0,0, .2);
+        border-bottom: .1rem solid rgba(0,0,0, .2); /* Border at the bottom */
         padding: 1rem;
         transform: translateY(-100%); /* Hidden by default */
         transition: transform .3s ease-in-out; /* Smooth transition */
         color: var(--black); /* Text color consistency */
+        box-shadow: var(--box-shadow); /* Consistent box shadow */
     }
 
     header .navbar.active {
@@ -163,6 +164,13 @@ header .icons #menu-bars {
         font-size: 2rem;
         background: var(--ghost-white); /* Ensure background color matches */
         color: var(--black); /* Ensure text color is consistent */
+        border-radius: .5rem; /* Consistent border radius */
+    }
+
+    header .navbar a.active,
+    header .navbar a:hover {
+        color: var(--ghost-white); /* Ensure text color matches */
+        background: #0f52ba; /* Highlight color */
     }
 
     #search-form #search-box {

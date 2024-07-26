@@ -551,6 +551,7 @@ header .icons #menu-bars{
         border: none;
         text-transform: capitalize;
         transition: all .2s linear;
+        background: var(--ghost-white);
     }
     
     html{

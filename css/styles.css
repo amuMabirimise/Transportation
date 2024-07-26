@@ -191,7 +191,8 @@ header .icons #menu-bars {
         padding: 1.5rem;
         margin: 1rem;
         font-size: 2rem;
-        background: #eee;
+        background: var(--ghost-white); /* Ensure this matches the background */
+        color: var(--black); /* Ensure the text color is consistent */
     }
 
     #search-form #search-box {

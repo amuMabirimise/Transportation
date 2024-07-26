@@ -535,81 +535,95 @@ header .icons #menu-bars{
 
 
 
-
-
-
-
-
-@media (max-width: 450px) {
-    :root{
-        --green: #27ae60;
-        --black: #192a56;
-        --box-shadow: 0.5rem 1.5rem rgba(0,0,0, .1);
-        --ghost-white: #F8F8FF;
+/*media queries*/
+@media (max-width: 991px){
+    * {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
     }
     
-    header {
-        padding: 1rem 2%;
+    html{
+        font-size: 55%;
     }
 
-    header .navbar a {
-        font-size: 1.2rem;
-        padding: .3rem .6rem;
+    header{
+        padding: 1rem 2rem;
     }
+}
 
-    .sub-heading {
-        font-size: 1.4rem;
+@media (max-width: 768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
     }
 
     .heading {
-        font-size: 1.8rem;
-    }
-
-    .home .swiper-container .swiper-slide .content span {
-        font-size: 2.5rem;
-    }
-
-    .home .swiper-container .swiper-slide .content h3 {
+        text-align: center;
+        color: #0f52ba;
         font-size: 3rem;
+        text-transform: uppercase;
+        background: var(--ghost-white);
     }
 
-    .home .swiper-container .swiper-slide .content p {
-        font-size: 1.2rem;
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: var(--ghost-white);
+        padding: 1rem 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        box-shadow: var(--box-shadow);
     }
 
-    .services .box-container {
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    header .logo{
+        color: var(--black);
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+    
+    header .logo i{
+        color: #0f52ba;
     }
 
-    .services .box-container .box h3 {
-        font-size: 1.4rem;
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--ghost-white);
+        border-bottom: .1rem solid rgba(0,0,0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    .services .box ul li {
-        font-size: 1.2rem;
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-    .about .row .content h3 {
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
         font-size: 2rem;
+        background: #eee;
     }
 
-    .about .row .content p {
-        font-size: 1rem;
-    }
-
-    .contact {
-        padding: 2rem 1%;
-    }
-
-    .contact .sub-heading {
-        font-size: 1.4rem;
-    }
-
-    .contact .heading {
-        font-size: 2rem;
-    }
-
-    .contact form {
-        max-width: 100%;
+    #search-form #search-box{
+       width: 80%;
+       margin: 0 1rem;
     }
 }
+
+
+
+

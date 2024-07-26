@@ -627,6 +627,11 @@ header .icons #menu-bars{
     .order form .inputBox .input{
         width: 100%;
     }
+
+
+    .footer {
+        background-color: #BCC2C2;
+    }
 }
 
 

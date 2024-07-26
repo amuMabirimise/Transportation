@@ -163,6 +163,7 @@ header .icons #menu-bars {
 
     header {
         padding: 1rem 2rem;
+        background: var(--ghost-white);
     }
 }
 
@@ -184,6 +185,7 @@ header .icons #menu-bars {
 
     header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        background: var(--ghost-white);
     }
 
     header .navbar a {

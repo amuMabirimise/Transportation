@@ -550,6 +550,14 @@ header .icons #menu-bars{
         font-size: 55%;
     }
 
+    section{
+        padding: 2rem 9%;
+    }
+    
+    section :nth-child(even){
+        background: var(--ghost-white);
+    }
+
     header{
         padding: 1rem 2rem;
     }
@@ -613,6 +621,7 @@ header .icons #menu-bars{
     
     .home .swiper-container .swiper-slide .content p {
         color: var(--light-color);
+        background: #F8F8FF;
         font-size: 2rem;
         padding: .5rem 0;
         padding-left: 10%;

@@ -533,5 +533,60 @@ header .icons #menu-bars{
 
 
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: var(--ghost-white);
+        text-align: center;
+        box-shadow: var(--box-shadow);
+    }
 
+    header .navbar a {
+        font-size: 2rem;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 0;
+    }
+
+    header .navbar.active {
+        display: flex;
+    }
+
+    header .icons {
+        display: flex;
+    }
+
+    header .icons #menu-bars {
+        display: block;
+        font-size: 2rem;
+    }
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    section {
+        padding: 2rem 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 2rem;
+    }
+
+    header .icons i,
+    header .icons a {
+        height: 4rem;
+        line-height: 4rem;
+        width: 4rem;
+        font-size: 1.5rem;
+    }
+}
 

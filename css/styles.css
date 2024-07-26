@@ -533,7 +533,96 @@ header .icons #menu-bars{
 
 
 
+/*media queries*/
+@media (max-width: 991px){
+    * {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+    }
+    
+    html{
+        font-size: 55%;
+    }
 
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+    #search-form #search-box{
+       width: 80%;
+       margin: 0 1rem;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    .home .swiper-container .swiper-slide .content span {
+        color: var(--black);
+        font-size: 3rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .home .swiper-container .swiper-slide .content h3 {
+        color: #0f52ba;
+        font-size: 5rem;
+        background: #F8F8FF;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .home .swiper-container .swiper-slide .content p {
+        color: var(--light-color);
+        font-size: 2rem;
+        padding: .5rem 0;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .home .swiper-container .swiper-slide .image {
+        background: #F8F8FF;
+        flex: 1 1 45rem;
+        padding-left: 4%;
+    }
+
+    .order form .inputBox .input{
+        width: 100%;
+    }
+}
 
 
 

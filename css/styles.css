@@ -114,6 +114,14 @@ header .icons #menu-bars {
     display: none;
 }
 
+
+
+
+
+
+
+
+
 /* Media queries */
 @media (max-width: 991px) {
     html {
@@ -132,20 +140,20 @@ header .icons #menu-bars {
     }
 
     header .navbar {
-        position: absolute;
-        top: 100%;
+        position: fixed; /* Changed from absolute to fixed */
+        top: 0; /* Aligns the navbar to the top */
         left: 0;
         right: 0;
-        background: var(--ghost-white);
+        background: var(--ghost-white); /* Background color consistency */
         border-bottom: .1rem solid rgba(0,0,0, .2);
         padding: 1rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transform: translateY(-100%); /* Hidden by default */
+        transition: transform .3s ease-in-out; /* Smooth transition */
         color: var(--black); /* Text color consistency */
     }
 
     header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        background: var(--ghost-white); /* Background color consistency */
+        transform: translateY(0); /* Show the navbar */
     }
 
     header .navbar a {

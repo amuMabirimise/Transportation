@@ -540,95 +540,69 @@ header .icons #menu-bars{
 
 
 
-/* Media queries */
-@media (max-width: 991px) {
-    * {
-        font-family: 'Nunito', sans-serif;
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-        outline: none;
-        border: none;
-        text-transform: capitalize;
-        transition: all .2s linear;
-        background: var(--ghost-white);
-    }
-    
-    html {
-        font-size: 55%;
-    }
-
+@media (max-width: 450px) {
     header {
-        padding: 1rem 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    header .icons #menu-bars {
-        display: inline-block;
-    }
-
-    header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        color: var(--ghost-white);
-        border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
-        padding: 1rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        padding: 1rem 2%;
     }
 
     header .navbar a {
-        display: block;
-        padding: 1.5rem;
-        margin: 1rem;
-        font-size: 2rem;
-        background: #eee;
+        font-size: 1.2rem;
+        padding: .3rem .6rem;
     }
-}
 
-@media (max-width: 450px) {
-    html {
-        font-size: 50%;
+    .sub-heading {
+        font-size: 1.4rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
     }
 
     .home .swiper-container .swiper-slide .content span {
-        color: var(--black);
-        background: #F8F8FF;
-        font-size: 3rem;
-        padding-left: 10%;
-        padding-right: 10%;
+        font-size: 2.5rem;
     }
-    
+
     .home .swiper-container .swiper-slide .content h3 {
-        color: #0f52ba;
-        font-size: 5rem;
-        background: #F8F8FF;
-        padding-left: 10%;
-        padding-right: 10%;
+        font-size: 3rem;
     }
-    
+
     .home .swiper-container .swiper-slide .content p {
-        color: var(--light-color);
-        background: #F8F8FF;
+        font-size: 1.2rem;
+    }
+
+    .services .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    .services .box-container .box h3 {
+        font-size: 1.4rem;
+    }
+
+    .services .box ul li {
+        font-size: 1.2rem;
+    }
+
+    .about .row .content h3 {
         font-size: 2rem;
-        padding: .5rem 0;
-        padding-left: 10%;
-        padding-right: 10%;
     }
 
-    .home .swiper-container .swiper-slide .image {
-        background: #F8F8FF;
-        flex: 1 1 45rem;
-        padding-left: 4%;
+    .about .row .content p {
+        font-size: 1rem;
     }
 
-    .order form .inputBox .input {
-        width: 100%;
+    .contact {
+        padding: 2rem 1%;
+    }
+
+    .contact .sub-heading {
+        font-size: 1.4rem;
+    }
+
+    .contact .heading {
+        font-size: 2rem;
+    }
+
+    .contact form {
+        max-width: 100%;
     }
 }

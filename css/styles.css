@@ -540,8 +540,8 @@ header .icons #menu-bars{
 
 
 
-/*media queries*/
-@media (max-width: 991px){
+/* Media queries */
+@media (max-width: 991px) {
     * {
         font-family: 'Nunito', sans-serif;
         margin: 0;
@@ -554,17 +554,16 @@ header .icons #menu-bars{
         background: var(--ghost-white);
     }
     
-    html{
+    html {
         font-size: 55%;
     }
 
-    header{
+    header {
         padding: 1rem 2rem;
     }
 }
 
-@media (max-width: 768px){
-
+@media (max-width: 768px) {
     header .icons #menu-bars {
         display: inline-block;
     }
@@ -594,8 +593,8 @@ header .icons #menu-bars{
     }
 }
 
-@media (max-width: 450px){
-    html{
+@media (max-width: 450px) {
+    html {
         font-size: 50%;
     }
 
@@ -630,7 +629,7 @@ header .icons #menu-bars{
         padding-left: 4%;
     }
 
-    .order form .inputBox .input{
+    .order form .inputBox .input {
         width: 100%;
     }
 }
